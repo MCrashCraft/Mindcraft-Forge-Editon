@@ -64,8 +64,18 @@ export function initBot(username) {
     bot.loadPlugin(collectblock);
     bot.loadPlugin(autoEat);
     bot.loadPlugin(armorManager); // auto equip armor
-
-    return bot;
+	
+    return bot;bot.on('blockUpdate', (oldBlock, newBlock) => {
+        const blockEntity = newBlock.blockEntity;
+        if (blockEntity) {
+            const pos = new Vec3(
+                blockEntity?.value?.x?.value & 0xf,
+                blockEntity?.value?.y?.value,
+                blockEntity?.value?.z?.value & 0xf
+            );
+            console.log(`Block updated at position: ${pos}`);
+        }
+    });
 }
 
 
