@@ -4,6 +4,7 @@
         "@anthropic-ai/sdk": "^0.27.0",
         "@google/generative-ai": "^0.17.1",
         "minecraft-data": "^3.46.2",
+        "minecraft-launcher-core": "^3.18.1",
         "minecraft-protocol": "^1.47.0",
         "minecraft-protocol-forge": "github:PrismarineJS/node-minecraft-protocol-forge",
         "mineflayer": "^4.20.0",
