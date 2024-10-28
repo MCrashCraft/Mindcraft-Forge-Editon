@@ -1,5 +1,5 @@
 export default {
-    minecraft_version: "1.12.2", // supports up to 1.20.4
+    minecraft_version: "1.20.1", // supports up to 1.20.4
     host: "localhost", // or "localhost", "your.ip.address.here"
     port: 55422,
     auth: "microsoft", // or "microsoft"
