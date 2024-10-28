@@ -30,7 +30,7 @@ Then, clone/download this repository
 
 Run `npm install` from the installed directory
 
-Install the minecraft version specified in `settings.js`, currently supports up to 1.20.4
+Install the minecraft version specified in `settings.js`, currently supports up to 1.21.1
 
 ### Running Locally
 

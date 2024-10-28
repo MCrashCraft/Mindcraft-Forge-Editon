@@ -1,9 +1,9 @@
-export default 
-{
-    "minecraft_version": "1.12.2", // supports up to 1.20.4
-    "host": "127.0.0.1", // or "localhost", "your.ip.address.here"
-    "port": 55916,
-    "auth": "offline", // or "microsoft"
+export default {
+    minecraft_version: "1.21.1", // supports up to 1.21.1
+    host: "localhost", // or "localhost", "your.ip.address.here"
+    port: 55422,
+    auth: "microsoft", // or "microsoft"
+    username: "MCrashCraft", // Add your username here
     
     "profiles": [
         "./andy.json",
