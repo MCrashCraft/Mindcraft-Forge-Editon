@@ -57,16 +57,40 @@ export function initBot(username) {
         port: settings.port,
         auth: settings.auth,
         version: false, // Enable autoVersion
-    }); 
+    });
+	
+// leave options empty for guessing, otherwise specify the mods,
+// channels and registries manually (channels and registries are only
+// relevant for fml2 handshake)
+const options = {
+  forgeMods: undefined,
+  channels: undefined
+};
+
+	
     autoVersionForge(bot._client); // Use bot._client instead of client
+    forgeHandshake(bot._client); // Add forge handshake
+	
     bot.loadPlugin(pathfinder);
     bot.loadPlugin(pvp);
     bot.loadPlugin(collectblock);
     bot.loadPlugin(autoEat);
     bot.loadPlugin(armorManager); // auto equip armor
 
+    // set up logging
+bot.on('connect', function () {
+  console.info('connected');
+});
+
+bot.on('spawn', function () {
+  console.info('I spawned');
+});
+
     return bot;
 }
+
+
+
 
 
 
